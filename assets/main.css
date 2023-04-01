@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;800&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,600&family=Nunito:wght@200;300;500;700;800&family=Overpass:wght@400;700&family=Patrick+Hand&family=Plus+Jakarta+Sans:wght@500;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  background-color: hsl(27deg, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+}
+
+#main-container {
+  display: table;
+  width: initial;
+  margin: auto;
+}
+#main-container .balance {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(10deg, 79%, 65%);
+  padding: 10px 15px 10px 15px;
+  color: hsl(33deg, 100%, 98%);
+  border-radius: 15px;
+}
+#main-container .balance .price {
+  font-size: 18px;
+  font-weight: 700;
+}
+#main-container .balance img {
+  width: 50px;
+}
+#main-container .spending {
+  background-color: hsl(33deg, 100%, 98%);
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  color: hsl(25deg, 47%, 15%);
+  margin-top: 10px;
+}
+#main-container .spending h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+#main-container .spending .graph {
+  display: flex;
+  gap: 0.8em;
+  height: 160px;
+}
+#main-container .spending .graph > div {
+  flex: 1;
+  position: relative;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#main-container .spending .g-item {
+  position: relative;
+  align-items: flex-end;
+  border-radius: 0.25em;
+  background-color: hsl(10deg, 79%, 65%);
+  width: 20px;
+}
+#main-container .spending .g-item + p {
+  text-align: center;
+}
+#main-container .spending .g-item:hover {
+  opacity: 0.8;
+}
+#main-container .spending .g-item:hover .tag {
+  display: block;
+}
+#main-container .spending .tag {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.24em;
+  background-color: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  font-size: 14px;
+  padding: 0.25em;
+}
+#main-container .spending .border-bb {
+  border-bottom: 1px solid hsl(28deg, 10%, 53%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#main-container .spending .total {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main-container .spending .total h1 {
+  font-size: 12px;
+  font-weight: 400;
+}
+#main-container .spending .total .price {
+  font-size: 26px;
+  font-weight: 700;
+}
+#main-container .spending .total .percent-content {
+  text-align: right;
+}
+#main-container .spending .total .percent-content .percent {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(25deg, 47%, 15%);
+}
+#main-container .spending .total .percent-content .last-month {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 40em) {
+  .graph {
+    height: 180px;
+  }
+}/*# sourceMappingURL=main.css.map */
